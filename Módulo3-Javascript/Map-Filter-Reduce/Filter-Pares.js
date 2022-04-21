@@ -1,11 +1,14 @@
-function filtersPares(array){
-    return array.filter((item) =>{
-        return item % 2 == 0;
+let month = 1;
+
+let months = {
+  "1": "January",
+  "2": "February",
+};
+
+function filter(months, month){
+    return months.filter((item)=>{
+      return Object.keys(item) = month;
     })
 }
 
-const nums = [1,2,3,4,5,6,7,8];
-
-console.log('numéros pares do array: ',filtersPares(nums));
-
-console.log(nums);
+console.log(  filter(months, month)   );
